@@ -164,7 +164,7 @@ pastel==0.2.1
 path==16.2.0
 paypal-checkout-serversdk==1.0.1
 paypalhttp==1.0.1
-pd==0.0.1
+pd==0.0.4
 pdfkit==0.6.1
 pexpect==4.8.0
 pickleshare==0.7.5
