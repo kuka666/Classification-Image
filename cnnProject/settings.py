@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 import os
 from pathlib import Path
+import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -26,6 +27,7 @@ SECRET_KEY = 'django-insecure-0a^=a1d26bjn9aspd#%)$$87t52ch2s8-nka=b*zr_j__-%%)(
 DEBUG = True
 
 ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['cnnProject.herokuapp.com']
 
 
 # Application definition
@@ -76,11 +78,12 @@ WSGI_APPLICATION = 'cnnProject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'image',
-        'USER': 'postgres',
-        'PASSWORD': 'dbhec123',
-        'HOST': 'localhost',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'degad6cgfk6l1j',
+        'USER': 'suxylhrzjufdre',
+        'PASSWORD': '23f9656108760b128b41e9fc814f71438f0254c9f15633aa05f70723ba4b07bc',
+        'HOST': 'ec2-52-211-158-144.eu-west-1.compute.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
@@ -119,8 +122,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_URL = 'static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# STATIC_URL = 'static/'
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = "/static/"
+django_heroku.settings(locals())
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
