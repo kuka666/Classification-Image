@@ -12,7 +12,7 @@ Also create table in postgresql:
 Create the database with name imagepostgresql
 python manage.py makemigrations python manage.py migrate python manage.py runserver
 
-bash
+``bash
 #change your setting
 DATABASES = { 'default': 
               { 'ENGINE': 'django.db.backends.postgresql', 
@@ -20,6 +20,7 @@ DATABASES = { 'default':
               'USER': 'postgres', #USER NAME 'PASSWORD': 
               'postgresql password', #YOUR PASSWORD
               'HOST': 'localhost', } } 
+              ``
 
 ### Usage
 bash
