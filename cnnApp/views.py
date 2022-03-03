@@ -2,9 +2,9 @@ from django.shortcuts import render
 from django.core.files.storage import FileSystemStorage
 from keras.models import load_model
 from keras.preprocessing import image
-import tensorflow as tf
+import tensorflow-cpu as tf
 import json
-from tensorflow import Graph
+from tensorflow-cpu import Graph
 from PIL import Image , ImageOps
 import numpy as np
 from .models import imagepostgre
