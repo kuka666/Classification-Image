@@ -36,22 +36,12 @@ http://127.0.0.1:8000/   to check
 
 Usage examples:
 python
-# get the bar chart
-http://127.0.0.1:8000/ 
-![1](https://user-images.githubusercontent.com/80199144/152835054-e8bd79c4-bb70-4313-91a1-0f2428284d25.jpg)
-python
-# get rhe pie chart
-http://127.0.0.1:8000/pie/
-![2](https://user-images.githubusercontent.com/80199144/152835118-568cd1c0-81be-427c-806e-2ee4183cef71.jpg)
+# horse
 
+![image](https://user-images.githubusercontent.com/80199144/156667969-ce22bbbb-eb0e-40b9-a3f2-840faba3e65e.png)
 
-python
-# get the line chart
-http://127.0.0.1:8000/line/ 
-![3](https://user-images.githubusercontent.com/80199144/152835154-1650e2b3-964f-4f81-8cea-b87eff05df74.jpg)
-
-
-
+# bird
+![image](https://user-images.githubusercontent.com/80199144/156668043-37c68ebb-35f3-43a5-8d71-a205465c214c.png)
 
 
 ## License
