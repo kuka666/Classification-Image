@@ -24,10 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-0a^=a1d26bjn9aspd#%)$$87t52ch2s8-nka=b*zr_j__-%%)('
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['cnnProject.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1','cnnProject.herokuapp.com']
 
 
 # Application definition
@@ -50,6 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'cnnProject.urls'
